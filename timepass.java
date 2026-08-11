@@ -1,5 +1,5 @@
 public class timepass {
     public static void main(String[] args){
-        System.out.println("hello moto");
+        System.out.println("hello world");
     }
 }

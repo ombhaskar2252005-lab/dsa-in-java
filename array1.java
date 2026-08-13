@@ -13,6 +13,7 @@ public class array1 {
             }
         }
         System.out.println("not present");
+        sc.close();
 
     }
 }

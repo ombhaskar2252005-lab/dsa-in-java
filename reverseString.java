@@ -1,4 +1,4 @@
-public class pallindrome {
+public class reverseString {
     public static void main(String[] args){
       String s = "Hello  c olleH";
       int i =0; 

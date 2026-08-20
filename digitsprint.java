@@ -8,6 +8,6 @@ public class digitsprint {
             System.out.println(digit); // yahan pe print likhne se reverse ho jayega
             num = num/10;
         }
-        
+        sc.close();
     }
 }

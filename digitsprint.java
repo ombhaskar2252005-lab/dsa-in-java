@@ -5,9 +5,10 @@ public class digitsprint {
         int num = sc.nextInt();
         while(num != 0){
             int digit = num % 10;
-            System.out.println(digit); // yahan pe print likhne se reverse ho jayega
+             System.out.println(digit); // yahan pe print likhne se reverse ho jayega
             num = num/10;
         }
+         
         sc.close();
     }
 }

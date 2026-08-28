@@ -1,3 +1,4 @@
+package methods;
 public class methods2 {
     static void printlevel(){
         System.out.println("hello, world");

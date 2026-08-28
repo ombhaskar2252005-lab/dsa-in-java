@@ -1,3 +1,4 @@
+package methods;
  public class basicmethod {
 //     static void print2table(){
 //         for(int i =0; i<= 10; i++){

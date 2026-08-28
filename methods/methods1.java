@@ -1,3 +1,4 @@
+package methods;
 public class methods1 {
     static void solve(int num){
        System.out.println("inside solve "+ num);

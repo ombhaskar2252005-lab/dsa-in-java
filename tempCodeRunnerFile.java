@@ -1,1 +1,1 @@
-System.out.println();
+int origin = num;

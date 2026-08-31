@@ -6,7 +6,7 @@ public class sparseMatrix {
         int m = 4;
         int cnt =0; // count how many non zero are present in matrix
         int num[][] = new int[n][m];
-        for(int i =0; i<n; i++){
+        for(int i =0; i<n; i++){ //non zero count
             for(int j =0; j<m; j++){
                 num [i][j] = sc.nextInt();
                 if(num[i][j] != 0){
@@ -33,6 +33,7 @@ public class sparseMatrix {
             }
             System.out.println("");
         }
+        sc.close();
         
 }
 }

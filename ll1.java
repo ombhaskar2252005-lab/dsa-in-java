@@ -28,6 +28,32 @@ public class ll1 {
         }
         temp.next = n2;
     }
+    public Node insertAtindex(int val, Node head, int pos){
+        if(pos<=0){
+            System.out.println("Invalid index");
+            return head;
+        }
+        if(head == null && pos>1){
+            System.out.println("Linked list is empty and position is out of reach");
+            return null;
+        }
+        if(pos == 1){
+            return insertAtStart(head, val);
+        }
+        Node temp = head;
+        for(int i =0; temp != null && i<pos-1; i++){
+            temp = temp.next;
+        }
+        if(temp== null){
+            System.out.println("Reached at the end of the linkedlist and position is out of reach");
+            return head;
+        }
+        Node nn = new Node(val);
+        nn.next = temp.next;
+        temp.next = nn;
+        return head;
+    }
+
     public static void main(String[] args){
         ll1 list = new ll1();
         Node head = list.new Node(1);
@@ -42,5 +68,9 @@ public class ll1 {
         list.print(head);
         System.out.print("null");
         System.out.println();
+
+        head = list.insertAtindex(25, head, 3);
+        list.print(head);
+        System.out.println("null");
     }
 }

@@ -8,6 +8,7 @@ public class singlyLL {
             this.next = null;
         }
     }
+    //data members
     private Node head;
     private Node tail;
     private int size;

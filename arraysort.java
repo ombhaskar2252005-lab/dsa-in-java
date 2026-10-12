@@ -38,6 +38,7 @@ public class arraysort {
             nums[i]=sc.nextInt();
         }
         sortColors(nums);
+        sc.close();
     }
 }
 

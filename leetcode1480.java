@@ -8,7 +8,7 @@ public class leetcode1480{
     }
     public static void main(String args[]){
         int nums[] = {1,2,4,6};
-        int result[] = sum(nums);
-        System.out.println(Arrays.toString(result));
+        System.out.println(Arrays.toString(sum(nums)));
     }
 }
+// yahan pe tostring ka use kiye hai taki array ko print kar sake woh bhi bracket me jaise [1,2,3,4]

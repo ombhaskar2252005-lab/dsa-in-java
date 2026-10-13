@@ -4,7 +4,7 @@ public class arrleetcode26 {
     public static int removeduplicates(int arr[]){
         int n = arr.length;
         int i =0; 
-        int j=0; 
+        int j=1; 
         while(j<n){
             if(arr[i]== arr[j]){
                 j++;

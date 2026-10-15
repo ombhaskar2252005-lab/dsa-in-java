@@ -24,17 +24,15 @@ public class sparseMat {
         //checking it is sparse matrix or not
         if(zero>nonzero){
             System.out.println("The matrix is a sparse matrix.");
-        }
-        else{
-            System.out.println("The matrix is not a sparse matrix.");
-        }
-        // display of matrix
-        System.out.println("The matrix is: ");
-        for(int i =0; i<rows; i++){
+            for(int i =0; i<rows; i++){
             for(int j =0; j<cols; j++){
                 System.out.print(arr[i][j]+" ");
             }
             System.out.println();
+        }
+        }
+        else{
+            System.out.println("The matrix is not a sparse matrix.");
         }
         sc.close();
     }

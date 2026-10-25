@@ -31,6 +31,28 @@ public class ImpSinglyll {
         }
         temp.next = newNode;
     }
+    void deleteAtHead(){
+        if(head==null){
+            System.out.println("List is empty.");
+            return;
+        }
+        head = head.next; // head ke baad wale value ko head bana do
+    }
+    void deleteAtEnd(){
+        if(head==null){
+            System.out.println("List is empty");
+            return;
+        }
+        if(head.next == null){
+            head = null;
+            return;
+        }
+        Node temp = head;
+        while(temp.next.next != null){
+            temp = temp.next;
+        }
+        temp.next = null;
+    }
     public void display(){ // isi ko traversal kehte ha 
         Node temp = head;
 
@@ -47,6 +69,13 @@ public class ImpSinglyll {
         list.insertAtHead(10);  
         list.insertAtHead(5); 
         list.insertAtEnd(30);
+        System.out.println("Original list");
+        list.display();
+        System.out.println("Delete at head");
+        list.deleteAtHead();
+        list.display();
+        System.out.println("Delete at end");
+        list.deleteAtEnd();
         list.display();
     }
 }

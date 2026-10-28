@@ -55,7 +55,6 @@ public class ImpSinglyll {
     }
     public void display(){ // isi ko traversal kehte ha 
         Node temp = head;
-
         while (temp != null) {
             System.out.print(temp.data + " --> ");
             temp = temp.next;
